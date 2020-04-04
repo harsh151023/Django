@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{%static 'css/front_page.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/kaushan-script" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/intuitive" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/jellee-typeface" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/eb-garamond" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/argh" type="text/css"/>
+
+
+<style>
+
+   .jumbotron{
+    background-color: black;
+    color: #ffffff;
+    margin-top: -25px;
+    }
+    #h11 {
+   font-family: 'IntuitiveRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+     #p0 {
+   font-family: 'KaushanScriptRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+
+.para{
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-bottom: 80px;
+}
+#p3{
+  font-family: 'AaarghNormal';
+    font-weight: normal;
+    font-style: normal;
+}
+#p2{
+  font-size: 200%;
+  font-family: 'JelleeBold';
+ font-weight: normal;
+ font-style: normal;
+}
+p1{
+  font-family: 'EBGaramondInitialsFill1Regular';
+   font-weight: normal;
+   font-style: normal;
+}
+     #p1{
+       font-size: 16px;
+       text-align: center;
+     }
+
+     .container{
+       margin-top: 50px;
+       height: 300px;
+       width: 700px;
+
+     }
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+
+  </style>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container1">
+        <ul class="nav navbar-nav">
+          <li class="navbar-link"><a href="{%url 'c_app:front_page'%}">HOME</a></li>
+          <li class="navbar-link"><a href="{%url 'c_app:event_page'%}">EVENT</a></li>
+          <li class="navbar-link"><a href="#">MEMBER</a></li>
+          <li class="navbar-link"><a href="{%url  'c_app:join_page'%}">REGISTER</a></li>
+          <li class="navbar-link" data-toggle="modal" data-target="#myModal"><a href="#">NOTICE</a></li>
+      </ul>
+      </div>
+    </nav>
+      <div class="jumbotron text-center">
+        <h1 id="h11">Curiosity Club</h1>
+        <p id="p0">learning together makes a difference</p>
+      </div>
+      <p id="p1"> " अमंत्रमक्षरं नास्ति नास्ति मूलमनौषधम् । अयोग्यः पुरुषो नास्ति योजकस्तत्र दुर्लभः॥ <br><span>There is no sound that is not a mantra, No plant that is not medicinal, There is no person in this world who is ineligible, inefficient, ineffective, what is lacking is a PROGRAMMER who manifests it.</span>"</p>
+     <div class="container">
+
+
+
+
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <!-- Indicators -->
+     <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+       <li data-target="#myCarousel" data-slide-to="2"></li>
+       <li data-target="#myCarousel" data-slide-to="3"></li>
+     </ol>
+
+     <!-- Wrapper for slides -->
+     <div class="carousel-inner">
+       <div class="item active">
+         <img src="{%static 'images/what.jpg'%}" alt="Los Angeles" style="width:100%;">
+       </div>
+
+       <div class="item">
+         <img src="{%static 'images/what.jpg'%}" alt="Chicago" style="width:100%;">
+       </div>
+
+       <div class="item">
+         <img src="{%static 'images/what.jpg'%}" alt="New york" style="width:100%;">
+       </div>
+     </div>
+
+     <!-- Left and right controls -->
+     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+       <span class="glyphicon glyphicon-chevron-left"></span>
+       <span class="sr-only">Previous</span>
+     </a>
+     <a class="right carousel-control" href="#myCarousel" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right"></span>
+       <span class="sr-only">Next</span>
+     </a>
+
+   </div>
+ </div>
+  <div class="para">
+    <p id="p2"><strong>OUR VISION</strong></p>
+    <p id="p3">We believe in philosophy of UBUNTU, i am because we are , our vision is to make students familiar with :<br>
+
+Algorithms and how they can use them in real world problems along with encouraging them to participate in various competitive programming events such as acm-icpc , codechef , codeforce ,hackerearth competitions just to name a few.
+Getting started with working on open-source, collabarating and building together, learning from mentors, contributing to community
+and encouraging them to praticipate in remote internship programs .
+Sharing and discussing about Research and Development, Future of computer science .
+</p>
+<br>
+<a href="{%url 'c_app:about_page'%}"><button id="km"class="btn btn-default btn-lg">Know More >></button></a>
+
+  </div>
+  <div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="text-center">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> CURIOSITY CLUB</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 0000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Notification</h4>
+      </div>
+      <div class="modal-body">
+        <p>No new notification</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  </body>
+</html>

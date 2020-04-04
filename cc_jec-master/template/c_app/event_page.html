@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EVENT</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+
+  </head>
+  <style>
+body{
+  width: 100%;
+  overflow-x:hidden;
+}
+
+   .colm{
+    background: black;
+    height: 450px;
+    width:1380px;
+  }
+  .row{
+    margin-top: 90px;
+    margin-left: 275px;
+
+  }
+
+  #imge{
+    margin-top: -20px;
+    height: 350px;
+    width: 1380px;
+
+  }
+  #p1{
+    color: #bbb;
+    text-align: center;
+    font-size: 175%;
+
+  }
+  #head{
+    color: white;
+    text-align: center;
+    margin-top: -200px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 300%;
+    letter-spacing: 0.125em
+  }
+
+  #head1{
+    text-align: center;
+    margin-top: 250px;
+    font-family: 'PT Mono', monospace;
+    color: #666f77;
+
+  }
+  .col-sm-3{
+    margin-top: 15px;
+  }
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+}
+
+  </style>
+  <body>
+
+  <nav class="navbar navbar-default navbar-static-top">
+      <div class="container1">
+        <ul class="nav navbar-nav">
+          <li class="navbar-link"><a href="{%url 'c_app:front_page'%}">HOME</a></li>
+          <li class="navbar-link"><a href="{%url 'c_app:event_page'%}">EVENT</a></li>
+          <li class="navbar-link"><a href="#">MEMBER</a></li>
+        <li class="navbar-link"><a href="{%url  'c_app:join_page'%}">REGISTER</a></li>
+        </ul>
+      </div>
+    </nav>
+      <img id="imge" src="{%static 'images/event.jpg'%}" alt="">
+      <h1 id="head">EVENTS</h1>
+      <h1 id="head1">UPCOMING EVENTS</h1>
+      <p id="p1">Check them out</p>
+
+      </div>
+
+      <div class="colm">
+      <div class="event text-center">
+          <div class="row">
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="{%static 'images/c.png'%}" alt="">
+          <p><strong>EVENT 1</strong></p>
+          <p>DD-MM-YYYY</p>
+          <button class="btn">Know More</button>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="{%static 'images/c.png'%}" alt="">
+          <p><strong>EVENT 2</strong></p>
+          <p>DD-MM-YYYY</p>
+          <button class="btn">Know More</button>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="{%static 'images/c.png'%}" alt="">
+          <p><strong>EVENT 3</strong></p>
+          <p>DD-MM-YYYY</p>
+          <button class="btn">Know More</button>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+  <div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row1">
+    <div class="text-center">
+
+
+
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> CURIOSITY CLUB</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 0000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+</html>
